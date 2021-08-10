@@ -21,13 +21,18 @@
         </div>
       </nav>
     </nav>
-
+    <!-- search button and input -->
     <main>
       <div class="row">
         <div class="col-4 bg-light">
           <div class="mt-2">Search for a City:</div>
           <div class="input-group mb-3">
-            <input type="text" id="city" class="form-control" />
+            <input
+              type="search"
+              id="cityInput"
+              placeholder="Search city"
+              class="form-control"
+            />
             <div class="input-group-append">
               <button class="btn btn-primary" type="button" id="citySearchBtn">
                 <i class="fas fa-search"></i>search
@@ -39,9 +44,69 @@
           </div>
         </div>
       </div>
+      <!-- recent searches -->
       <article class="col-4 row p-2 card margin-left">
         <h1>recent searches</h1>
       </article>
+
+      <!-- 5 day weather cards -->
+      <div class="card-group hide">
+        <div class="card">
+          <img src="..." id="card-image" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 id="card-date"></h5>
+            <ul>
+              <li id="card-temp"></li>
+              <li id="card-wind"></li>
+              <li id="card-humidity"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." id="card-image1" class="card-img-top" alt="..." />
+          <div class="card-body1">
+            <h5 id="card-date1"></h5>
+            <ul>
+              <li id="card-temp1"></li>
+              <li id="card-wind1"></li>
+              <li id="card-humidity1"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." id="card-image2" class="card-img-top" alt="..." />
+          <div class="card-body2">
+            <h5 id="card-date2"></h5>
+            <ul>
+              <li id="card-temp2"></li>
+              <li id="card-wind2"></li>
+              <li id="card-humidity2"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." id="card-image3" class="card-img-top" alt="..." />
+          <div class="card-body3">
+            <h5 id="card-date3"></h5>
+            <ul>
+              <li id="card-temp3"></li>
+              <li id="card-wind3"></li>
+              <li id="card-humidity3"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." id="card-image4" class="card-img-top" alt="..." />
+          <div class="card-body4">
+            <h5 id="card-date4"></h5>
+            <ul>
+              <li id="card-temp4"></li>
+              <li id="card-wind4"></li>
+              <li id="card-humidity4"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script
