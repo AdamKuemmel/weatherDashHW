@@ -9,6 +9,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./develop/css/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <title>weatherDashHW</title>
   </head>
@@ -22,32 +28,46 @@
       </nav>
     </nav>
     <!-- search button and input -->
+
     <main>
-      <div class="row">
-        <div class="col-4 bg-light">
-          <div class="mt-2">Search for a City:</div>
-          <div class="input-group mb-3">
-            <input
-              type="search"
-              id="cityInput"
-              placeholder="Search city"
-              class="form-control"
-            />
-            <div class="input-group-append">
-              <button class="btn btn-primary" type="button" id="citySearchBtn">
-                <i class="fas fa-search"></i>search
-              </button>
-              <button class="btn btn-secondary" type="button" id="clear">
-                <i class="fas fa-times-circle"></i>X
-              </button>
+      <div id="topContain">
+        <div class="col-4">
+          <div class="bg-light">
+            <div class="input-group mb-4">
+              <input
+                type="search"
+                id="cityInput"
+                placeholder="Search city"
+                class="form-control"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  id="citySearchBtn"
+                >
+                  <i class="fas fa-search"></i>search
+                </button>
+                <button class="btn btn-secondary" type="button" id="clear">
+                  <i class="fas fa-times-circle"></i>X
+                </button>
+              </div>
             </div>
           </div>
+
+          <!-- recent searches -->
+          <article class="col-12 row p-2 card margin-left">
+            <h1 id="recentSearch"></h1>
+          </article>
+        </div>
+        <!-- Daily weather display -->
+        <div class="col-9">
+          <h2 id="weatherCity"></h2>
+          <p id="weatherHumid"></p>
+          <h1 id="weatherTemp"></h1>
+          <p id="weatherWind"></p>
         </div>
       </div>
-      <!-- recent searches -->
-      <article class="col-4 row p-2 card margin-left">
-        <h1>recent searches</h1>
-      </article>
 
       <!-- 5 day weather cards -->
       <div class="card-group hide">

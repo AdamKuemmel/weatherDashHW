@@ -1,3 +1,14 @@
 .hide {
   display: none;
 }
+body {
+  background-color: grey;
+}
+#topContain {
+  display: flex;
+  border: 2px solid;
+}
+
+.card {
+  background-color: lightskyblue;
+}
